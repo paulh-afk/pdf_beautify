@@ -10,7 +10,7 @@ pdf_file = input_folder_path + file_name + '.pdf'
 # t: paragraph
 # ff2: italic caracters
 # Download the font you want (example site: https://fonts.google.com/)
-personnalize_css = '''
+customize_css = '''
     .h1,
     .h2,
     .h3 {
