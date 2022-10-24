@@ -6,6 +6,7 @@ PDF to stylized HTML using [pdf2htmlEX](https://pdf2htmlex.github.io/pdf2htmlEX/
 >
 > Some pdf's may become less readable
 >
+>
 > **Note**
 >
 > You can modify the variable `customize_css` to remedy this
