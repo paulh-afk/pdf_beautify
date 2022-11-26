@@ -3,12 +3,11 @@ import subprocess
 input_folder_path = 'input/'
 output_folder_path = 'output/'
 
-file_name = "TP4"
+file_name = "demo"
 
 pdf_file = input_folder_path + file_name + '.pdf'
 
 # t: paragraph
-# ff2: italic caracters
 # Download the font you want (example site: https://fonts.google.com/)
 customize_css = '''
     .h1,
@@ -18,7 +17,7 @@ customize_css = '''
     }
 
     .t {
-      font-family: 'Lato', sans-serif;
+      font-family: 'Lato', sans-serif !important;
     }
 
     .ff2 {
@@ -35,7 +34,7 @@ def createHTMLfile():
 statusResponse = createHTMLfile()
 
 with open(output_folder_path + file_name + '.css', 'a') as file:
-    file.write(personnalize_css)
+    file.write(customize_css)
     file.close()
 
 if statusResponse != 1:
